@@ -1,0 +1,165 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+  height: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: "Bangers", cursive;
+  color: rgb(73, 13, 168);
+  width: 50%;
+  border: 5px solid black;
+  position: absolute;
+  font-size: 50px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgb(36, 15, 49);
+}
+
+.tip {
+  margin: 0;
+  color: purple;
+  width: 60%;
+  font-family: "Bangers", cursive;
+  font-size: 32px;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  clip-path: polygon(10% 0%, 80% 0%, 90% 100%, 20% 100%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: rgb(36, 15, 49);
+}
+
+.progressbarContainer {
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 10px;
+  background-color: rgb(25, 6, 37);
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.progress {
+  position: relative;
+  border-radius: 20px;
+  background-color: rgb(73 13 168);
+  width: 0%;
+  height: 100%;
+  /*transition: 1s ease-in-out;*/
+  transition : 0.2s ease-in-out;
+}
+
+.progressLabel {
+  font-family: "Bangers", cursive;
+  margin: 0;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: rgb(73 13 168);
+}
+
+.tipsContainer {
+  display: flex;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36%;
+  font-size: 17px;
+  font-family: "Bangers", cursive;
+  background-color: rgb(73 13 168 / 66%);
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.tips2 {
+  width: 100%;
+}
+
+.testfont {
+  margin: 0;
+  position: absolute;
+  top: 21%;
+  left: 24%;
+  z-index: 2;
+  font-size: 6em;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  transform: rotate(9deg);
+  text-shadow: 1px 1px rgb(73 13 168), 2px 2px rgb(73 13 168),
+    3px 3px rgb(73 13 168), 4px 4px rgb(73 13 168), 5px 5px rgb(73 13 168),
+    6px 6px rgb(73 13 168), 7px 7px rgb(73 13 168), 8px 8px rgb(73 13 168),
+    9px 9px rgb(73 13 168), 10px 10px rgb(73 13 168),
+    10px 10px 30px rgb(0 0 0 / 70%);
+}
+
+@media (max-width: 1600px) {
+  .testfont {
+    top: 10%;
+  }
+}
+
+.copyright {
+  position: absolute;
+  top: 98%;
+  left: 0%;
+  font-size: 9px;
+  color: #80808075;
+  z-index: 5;
+}
