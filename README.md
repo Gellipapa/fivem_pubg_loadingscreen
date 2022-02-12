@@ -13,7 +13,7 @@ FiveM-hez készült betöltő képernyő, React JS-ben írva. Animált füst eff
 #Szerkesztéshez
 
 - Konzolba beírni npm i 
--  Ha letöltötek a csomagok akkor utána npm run serve tudod dev módban böngészőben futtatni
+-  Ha letöltődtek a csomagok akkor utána npm run serve tudod dev módban böngészőben futtatni
 -  Éles verzió buildeléséhez az npm run build kell kiadni
 -  Majd a fájlokat bemásolni(dist mappában lesznek az új fájlok) az UI mappában
 
