@@ -7,8 +7,8 @@ FiveM-hez készült betöltő képernyő, React JS-ben írva. Animált füst eff
 #Telepítés
 
 - Repository letöltése 
-- Resource mappába bemásolás
-- Server.cfg-hez hozzáadva már működik is
+- Resource mappába bemásolni a pubg_loading_screen almappát (ezt fogja a FiveM beolvasni)
+- Server.cfg-hez(start pubg_loading_screen) hozzáadva már működik is
 
 #Szerkeztéshez
 
